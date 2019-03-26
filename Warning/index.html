@@ -12,9 +12,12 @@ function GetQueryString(name) {
 		}
 </style>
 <script>
-		var name = $.getUrlParam('title');
+		var name = $.getUrlParam('name');
+		var id = $.getUrlParam('id');
+ 
 		window.onload = function(){
-			$("#warning").val(title);
+			$("#addname").val(name);
+			$("#addid").val(id);
 		}
 	</script>
 <style>
