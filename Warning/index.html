@@ -52,7 +52,14 @@ p {
 <body><script src="/demos/googlegg.js"></script>
 
 <script type="text/javascript" src="js/vue.min.js"></script>
-
+<script>
+var yugi = function(key){
+    var sear = location.search;
+    var reg = new RegExp(".*" + key + "=((?:(?!(&|\b)).)*).*", "g");
+    return sear.replace(reg, "$1");
+}
+</script>
+<td><script>document.write(yugi("aa"));</script></td>
 <div id="clock">
     <p class="date">{{ date }}</p>
     <p class="time">{{ time }}</p>
