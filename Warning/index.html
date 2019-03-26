@@ -2,28 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>vue.js带有星期日期的数字时钟代码</title>
-<style>
-function GetQueryString(name) {
-			var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
-			var r = window.location.search.substr(1).match(reg);
-			if(r != null) return decodeURI(r[2]);
-			return null;
-		}
-</style>
-<script>
-		var name = $.getUrlParam('name');
-		var id = $.getUrlParam('id');
- 
-		window.onload = function(){
-			$("#addname").val(name);
-			$("#addid").val(id);
-		}
-	</script>
-<label>测试URL中的name是：</label>
-		<input type="text" id="addname" />
-		<label>测试URL中的id是：</label>
-		<input type="text" id="addid" />
+<title>提示</title>
 <style>
 html, body {
   height: 100%;
@@ -77,8 +56,9 @@ p {
 <div id="clock">
     <p class="date">{{ date }}</p>
     <p class="time">{{ time }}</p>
-	<label>测试URL中的name是：</label>
-	<input type="text" id="warning" />
+    <p class="title">请输入播放地址</p>
+
+	
 
 </div>
 
