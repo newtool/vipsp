@@ -1,6 +1,6 @@
 function start(){
 	if($('input').val() != ""){
-		var url = "https://660e.com/?url="+$('input').val();
+		var url = "http://66jx.pinjun66.com/jx.php?url="+$('input').val();
         layui.use('layer', function(){
 			  layer.open({
 			  type: 2
